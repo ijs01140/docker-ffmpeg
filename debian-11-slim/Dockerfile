@@ -19,8 +19,6 @@ RUN apt-get -yqq update && \
 
 FROM base AS build
 
-ARG PREFIX=/opt/ffmpeg
-
 RUN buildDeps="autoconf \
         automake \
         cmake \
